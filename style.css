@@ -20,10 +20,21 @@
   src: url(https://fonts.googleapis.com/css?family=Lato);
 }
 
+@keyframes awesome-out {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+/* navigation bars */
 .pre-nav {
   display: none;
   justify-content: flex-end;
@@ -102,7 +113,10 @@ nav {
   background-color: #fff;
   width: 100%;
   height: 100vh;
+  position: fixed;
+  z-index: 5;
 }
+
 
 .nav-logo {
   width: 150px;
@@ -115,7 +129,7 @@ nav {
   align-items: center;
   list-style-type: none;
   font-family: theme-font-2, sans-serif;
-  height: 80vh;
+  height: 71vh;
   padding: 0;
   margin: 0;
 }
@@ -246,6 +260,30 @@ nav .curtain-deco {
   display: none;
 }
 
+/* Content start */
+
+header {
+  position: relative;
+  margin: 0 5%;
+}
+
+header h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #ec5342;
+  margin-top: 0;
+}
+
+header h2 {
+  font-family: "COCOGOOSE", sans-serif;
+  line-height: 100%;
+  font-size: 34px;
+  color: red;
+  margin: 30px 0 50px 0;
+}
+
+/* responsiveness adjustment */
+
 @media screen and (min-width:769px) {
 
   .burger-container,
@@ -268,7 +306,7 @@ nav .curtain-deco {
   }
 
   .nav-logo-frame {
-    margin-left: 5%;
+    margin-left: 0;
   }
 
   .nav-logo {
@@ -286,7 +324,7 @@ nav .curtain-deco {
     padding: 0;
     gap: 8%;
     margin-left: 6%;;
-    min-width: 578px;
+    min-width: 625px;
   }
 
   .menu a {

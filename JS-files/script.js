@@ -7,6 +7,7 @@ console.log(menuBtn,navOverlay,navList);
 function overlay() {
     navOverlay.classList.toggle('invisible');
     burgerBar.classList.toggle('active');
+    navList.style.animation = 'awesome-out 2s'
 }
 
 menuBtn.addEventListener('click',overlay);
