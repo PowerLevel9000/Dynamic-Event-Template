@@ -115,7 +115,7 @@ nav {
   align-items: center;
   list-style-type: none;
   font-family: theme-font-2, sans-serif;
-  height: 40vh;
+  height: 80vh;
   padding: 0;
   margin: 0;
 }
@@ -179,8 +179,6 @@ nav .curtain-deco {
 
 .burger-container {
   position: absolute;
-  top: 20px;
-  left: 30px;
   font-size: 30px;
   transition: 0.2s;
   cursor: pointer;

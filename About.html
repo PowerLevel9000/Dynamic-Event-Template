@@ -9,10 +9,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./Media/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./Media/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./Media/favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/b89b7c8adf.js" crossorigin="anonymous"></script>
   <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,15 +20,25 @@
     <a href=""> <i class="fab fa-twitter"></i></a>
     <a href=""><i class="fab fa-instagram"></i></a>
     <ul class="pre-menu">
-      <li><a href="#">English</a></li>
+      <li id="google_translate_element"></li>
       <li><a href="#">My Page</a></li>
       <li><a href="#">Input</a></li>
     </ul>
   </div>
-  <nav id="nav" class="invisible">
-    <div id="cross" class="cross-container">
-      <i class="fas fa-times"></i>
+  <div id="burger-container" class="burger-container">
+      <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
+        <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path
+              class="line middle"
+              d="m 30,50 h 40" />
+        <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
     </div>
+  <nav id="nav" class="invisible">
     <a href="./index.html" class="nav-logo-frame">
       <img src="./media/camp-logowithout.png" alt="nav-logo" class="nav-logo">
     </a>
@@ -38,15 +48,30 @@
       <li><a href="#">Join</a></li>
       <li><a href="#">Sponsor</a></li>
       <li><a href="#">News</a></li>
+      <button type="button" class="nav-btn">Join Now!</button>
     </ul>
-    <button type="button" class="nav-btn">Join Now!</button>
+    
     <div class="deco-ball-1"></div>
     <img src="./media/11-chess-board-gray.png" alt="" class="curtain-deco">
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en' },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
   </nav>
+
+  <script src="./JS-files/script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
 </body>
 
 </html>
