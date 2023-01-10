@@ -290,7 +290,7 @@ header h2 {
   display: inline;
   font-family: "COCOGOOSE", sans-serif;
   line-height: 100%;
-  font-size: 34px;
+  font-size: 30px;
   /* color: red; */
   margin: 30px 0 50px 0;
   background: rgb(236, 82, 66);
@@ -315,6 +315,7 @@ header h2 {
 }
 
 .txt-container p {
+  font-size: 15px;
   margin: 0 5%;
 }
 
@@ -653,23 +654,24 @@ footer {
 }
 
 .deco-ball-2 {
-  top: 255px;
+  top: 233px;
+  left: 30px;
   background-image: url(./media/hitmark-colorful.png);
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .deco-ball-3 {
-  top: 285px;
-  right: -10px;
+  top: 261px;
+  right: 20px;
   background-image: url(./media/11-chess-board-gray-resized.png);
   width: 50px;
   height: 50px;
 }
 
 .deco-ball-4 {
-  top: 160px;
-  left: 15%;
+  top: 81px;
+  left: 0%;
   background-image: url(./media/11-chess-board-gray-resized.png);
   width: 40px;
   height: 40px;
@@ -677,15 +679,15 @@ footer {
 
 .deco-ball-5 {
   top: 55px;
-  right: 10%;
+  right: 6%;
   background-image: url(./media/b-stripes.png);
   width: 35px;
   height: 35px;
 }
 
 .deco-ball-6 {
-  top: 0;
-  left: 20%;
+  bottom: 0;
+  right: 0;
   background-image: url(./media/o-stripes.png);
   width: 25px;
   height: 25px;
@@ -864,7 +866,10 @@ footer {
   header h2 {
     font-size: 60px;
   }
-
+  
+  .txt-container p {
+    font-size: 20px;
+  }
   .curtain-hitmark {
     right: 40px;
     bottom: -70px;
@@ -935,6 +940,22 @@ footer {
 
   .namaste {
     margin: -161px 0 0 0;
+  }
+
+  .deco-ball-2 {
+    top: 230px;
+    left: -9px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .deco-ball-3 {
+    top: 478px;
+    right: -10px;
+  }
+
+  .deco-ball-6 {
+    top: 200px;
   }
 
   .main-card h3 {
