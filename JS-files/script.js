@@ -3,7 +3,6 @@ const trainer = document.querySelectorAll('.trainer-card');
 const button = document.querySelector('.trainer-btn');
 const less = document.getElementById('morles');
 const up = document.getElementById('chevron')
-console.log(trainer)
 function display() {
     for (let i = 2; i < trainer.length; i++) {
         trainer[i].classList.toggle('invisible')
@@ -24,7 +23,6 @@ if (window.innerWidth <= 768) {
     const navOverlay = document.getElementById('nav');
     const navList = document.getElementsByClassName('menu')[0];
     const burgerBar = document.getElementsByClassName('hamRotate')[0];
-    console.log(menuBtn, navOverlay, navList);
     function overlay() {
 
         navOverlay.classList.toggle('invisible');
@@ -34,7 +32,6 @@ if (window.innerWidth <= 768) {
     }
     menuBtn.addEventListener('click', overlay);
     navList.addEventListener('click', overlay);
-    console.log(hello);
 
 }
 
