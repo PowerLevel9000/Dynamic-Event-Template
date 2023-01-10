@@ -41,6 +41,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
 /* navigation bars */
 .pre-nav {
   display: none;
@@ -561,6 +566,100 @@ main i {
   height: 100px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+
+.footer-logo {
+  width: 125px;
+  height: 125px;
+  padding: 20px 0;
+}
+
+.about-header {
+  position: relative;
+  padding-top: 60px;
+}
+
+.about-header h1,
+.about-header h2,
+.about-header h3 {
+  position: relative;
+  text-align: center;
+  color: #ec5342;
+  z-index: 3;
+}
+
+.about-header .txt-container {
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
+  margin: 30px auto;
+}
+
+.about-header .contact {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.about-header a {
+  color: #3d3d3d;
+}
+
+.deco-ball-2,
+.deco-ball-3,
+.deco-ball-4,
+.deco-ball-5,
+.deco-ball-6 {
+  position: absolute;
+  background-color: #f5f5f5 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  z-index: 1;
+}
+
+.deco-ball-2 {
+  top: 255px;
+  background-image: url(./media/hitmark-colorful.png);
+  width: 100px;
+  height: 100px;
+}
+
+.deco-ball-3 {
+  top: 285px;
+  right: -10px;
+  background-image: url(./media/11-chess-board-gray-resized.png);
+  width: 50px;
+  height: 50px;
+}
+
+.deco-ball-4 {
+  top: 160px;
+  left: 15%;
+  background-image: url(./media/11-chess-board-gray-resized.png);
+  width: 40px;
+  height: 40px;
+}
+
+.deco-ball-5 {
+  top: 55px;
+  right: 10%;
+  background-image: url(./media/b-stripes.png);
+  width: 35px;
+  height: 35px;
+}
+
+.deco-ball-6 {
+  top: 0;
+  left: 20%;
+  background-image: url(./media/o-stripes.png);
+  width: 25px;
+  height: 25px;
+}
+
 /* responsiveness adjustment */
 
 @media only screen and (min-width: 400px) {
@@ -769,4 +868,16 @@ main i {
     flex-wrap: nowrap;
   }
 
+  .about-header {
+    padding-top: 200px;
+  }
+
+  .txt-container {
+    font-size: 18px;
+    max-width: 900px;
+  }
+
+  .contact {
+    padding-bottom: 50px;
+  }
 }
