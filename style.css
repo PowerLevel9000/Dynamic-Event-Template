@@ -446,6 +446,85 @@ main i {
   transition: 0.2s;
 }
 
+#trainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+#trainers h2 {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+
+.trainer-info hr {
+  text-align: left;
+  width: 10%;
+  margin-left: 0;
+}
+
+.trainer-btn {
+  max-width: 400px;
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  margin: 40px 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.trainer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trainer-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-family: "Lato", sans-serif;
+  margin: 5% 2.5%;
+}
+
+.trainer-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 55px;
+  max-width: 150px;
+  width: 15%;
+  z-index: 2;
+}
+
+.trainer-img {
+  position: relative;
+  margin-top: 4%;
+  margin-left: 4%;
+  min-width: 115px;
+  max-width: 300px;
+  width: 30%;
+  /* height: 30%; */
+  z-index: 3;
+}
+
+.trainer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  height: 34%;
+  margin: 0 5%;
+}
+
+.trainer-info h4 {
+  font-size: 12px;
+  color: #ec5342;
+  margin: 2.5% 0;
+}
+
 /* responsiveness adjustment */
 
 @media only screen and (min-width: 400px) {
@@ -460,6 +539,12 @@ main i {
     right: 20%;
     width: 100px;
     height: 100px;
+  }
+
+  .trainer-info h4 {
+    font-size: 14px;
+    color: #ec5342;
+    margin: 3.5% 0;
   }
 }
 
@@ -619,6 +704,29 @@ main i {
     width: 27.5%;
     padding: 0;
     margin: 80px auto;
+  }
+
+  #trainers h2 {
+    margin-top: 75px;
+  }
+
+  .trainer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+    width: 90%;
+    padding: 100px 0;
+    margin: auto;
+  }
+
+  .trainer-card {
+    margin: 0;
+  }
+
+  .trainer-card h4 {
+    font-size: 18px;
+    margin-bottom: 0;
   }
 
 }
