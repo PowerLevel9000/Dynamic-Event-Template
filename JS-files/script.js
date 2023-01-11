@@ -1,4 +1,3 @@
-
 //  More Or Less Button
 const trainer = document.querySelectorAll('.trainer-card');
 const button = document.querySelector('.trainer-btn');
