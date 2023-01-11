@@ -1,3 +1,6 @@
+// Google Translation Script
+
+//  More Or Less Button
 const trainer = document.querySelectorAll('.trainer-card');
 const button = document.querySelector('.trainer-btn');
 const less = document.getElementById('morles');
@@ -15,6 +18,7 @@ function display() {
   }
 }
 
+// Navigation Overlay
 button.addEventListener('click', display);
 const menuBtn = document.getElementById('burger-container');
 const navOverlay = document.getElementById('nav');

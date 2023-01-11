@@ -1,3 +1,4 @@
+// Data Base
 const trainer1 = {
   name: 'M. S. Dhoni',
   field: 'Indian Cricket Team Captain',
@@ -57,6 +58,7 @@ const volunteers = {
 
 const trainersDatabase = [trainer1, trainer2, trainer3, trainer4, trainer5, volunteers];
 
+//  Dynamic inserting of trainer section
 const trainers = document.querySelector('#trainer-container');
 trainers.innerHTML = '';
 for (let i = 0; i < trainersDatabase.length; i += 1) {
@@ -68,13 +70,13 @@ for (let i = 0; i < trainersDatabase.length; i += 1) {
   }
 
   trainerCard.innerHTML = `
-        <img src="./Media/11-chess-board-gray.png" alt="" class="trainer-deco">
-        <img src="${trainersDatabase[i].image}" class="trainer-img">
+        <img src="./media/11-chess-board-gray.png" alt="" class="trainer-deco">
+        <img title="Our Trainer" src="${trainersDatabase[i].image}" alt="Our Trainers" class="trainer-img">
         <div class="trainer-info">
-          <h3 class="trainer-name">${trainersDatabase[i].name}</h3>
-          <h4 class="trainer-occ">${trainersDatabase[i].field}</h4>
+          <h3 title="Trainer Name" class="trainer-name">${trainersDatabase[i].name}</h3>
+          <h4 title="Trainer Field" class="trainer-occ">${trainersDatabase[i].field}</h4>
           <hr>
-          <p class="trainer-para">${trainersDatabase[i].info}
+          <p Title="Trainer Info" class="trainer-para">${trainersDatabase[i].info}
           </p>
         </div>
     `;
