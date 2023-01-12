@@ -28,7 +28,5 @@ function overlay() {
   navOverlay.style.animation = 'awesome-out 1s';
 }
 
-if (window.innerWidth <= 768) {
-  menuBtn.addEventListener('click', overlay);
-  navList.addEventListener('click', overlay);
-}
+menuBtn.addEventListener('click', overlay);
+navList.addEventListener('click', overlay);

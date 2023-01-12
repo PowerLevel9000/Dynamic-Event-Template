@@ -98,10 +98,10 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  width: 35%;
+  width: 50%;
   padding: 0;
   margin: 0 5% 0 2.5%;
-  max-width: 295px;
+  max-width: 363px;
 }
 
 .pre-menu a {
@@ -221,7 +221,7 @@ nav {
   text-decoration: none;
 }
 
-.about-header a {
+.about-introduction a {
   color: #3d3d3d;
 }
 
@@ -350,19 +350,25 @@ nav .curtain-deco {
 }
 
 /* Content start */
-header {
+.introduction {
   position: relative;
   margin: 0 5%;
 }
 
-header h1 {
+main h2 {
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.introduction h2 {
   font-family: "Lato", sans-serif;
   font-size: 24px;
   color: var(--orange-theme);
   margin-top: 0;
 }
 
-header h2 {
+.introduction h1 {
   display: inline;
   font-family: "COCOGOOSE", sans-serif;
   line-height: 100%;
@@ -424,7 +430,7 @@ main i,
   font-family: 'Material Symbols Outlined', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 60px;
+  font-size: 42px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -436,7 +442,7 @@ main i,
 }
 
 main i {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .tag-container i {
@@ -452,12 +458,6 @@ main {
   background-color: #272a31;
   color: #fff;
   text-align: center;
-}
-
-main h2 {
-  font-family: "Lato", sans-serif;
-  padding-top: 20px;
-  margin-bottom: 0;
 }
 
 .program-container {
@@ -481,6 +481,14 @@ main h2 {
   margin-right: 5%;
 }
 
+.program-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
 .h-underline {
   display: flex;
   width: 10%;
@@ -500,7 +508,7 @@ main h2 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 50%;
+  height: 57%;
   padding: 0;
   margin-left: 39px;
 }
@@ -548,9 +556,9 @@ main h2 {
   background-color: #fff;
 }
 
-.about-header h1,
-.about-header h2,
-.about-header h3 {
+.about-introduction h1,
+.about-introduction h2,
+.about-introduction h3 {
   position: relative;
   text-align: center;
   color: #ec5342;
@@ -598,21 +606,23 @@ main h2 {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 55px;
-  max-width: 150px;
-  width: 15%;
+  width: 55px;
   z-index: 2;
+}
+
+.trainer-frame {
+  width: 33.33%;
 }
 
 .trainer-img {
   position: relative;
-  margin-top: 4%;
-  margin-left: 4%;
   min-width: 115px;
   max-width: 300px;
   width: 30%;
   height: 115px;
   z-index: 3;
+  top: 9px;
+  left: 10px;
 }
 
 .trainer-info {
@@ -621,7 +631,7 @@ main h2 {
   justify-content: space-evenly;
   align-self: center;
   height: 34%;
-  margin: 0 5%;
+  margin: -7px 1% 0 13%;
 }
 
 .trainer-info h4 {
@@ -629,6 +639,10 @@ main h2 {
   font-style: italic;
   color: #ec5342;
   margin: 0;
+}
+
+.trainer-para {
+  font-size: small;
 }
 
 #partner {
@@ -691,18 +705,18 @@ footer {
   padding: 20px 0;
 }
 
-.about-header {
+.about-introduction {
   position: relative;
   padding-top: 60px;
 }
 
-.about-header .txt-container {
+.about-introduction .txt-container {
   background-color: #fff;
   border: 2px solid #d3d3d3;
   margin: 30px auto;
 }
 
-.about-header .contact {
+.about-introduction .contact {
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -908,6 +922,7 @@ footer {
     background-color: #fff;
     height: 80px;
     position: relative;
+    animation: none !important;
   }
 
   .nav-logo-frame {
@@ -941,12 +956,16 @@ footer {
     margin-bottom: 0;
   }
 
-  header h1 {
+  main h2 {
+    padding-top: 80px;
+  }
+
+  .introduction h2 {
     font-size: 40px;
     margin-top: -60px;
   }
 
-  header h2 {
+  .introduction h1 {
     font-size: 60px;
   }
 
@@ -978,9 +997,7 @@ footer {
     padding-bottom: 10px;
   }
 
-  main h2 {
-    padding-top: 80px;
-  }
+
 
   main hr {
     margin-bottom: 50px !important;
@@ -1041,6 +1058,7 @@ footer {
   .m-card-text {
     width: 100%;
     margin: 3%;
+    padding-left: 11px;
   }
 
   .main-btn {
@@ -1081,6 +1099,15 @@ footer {
     margin-bottom: 0;
   }
 
+  .trainer-deco {
+    width: 85px;
+  }
+
+  .trainer-img {
+    top: 12px;
+    left: 15px;
+  }
+
   .trainer-btn {
     display: none;
   }
@@ -1096,7 +1123,7 @@ footer {
     width: 70px;
   }
 
-  .about-header {
+  .about-introduction {
     padding-top: 200px;
   }
 
