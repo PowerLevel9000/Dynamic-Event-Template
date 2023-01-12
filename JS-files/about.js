@@ -1,4 +1,4 @@
-// About Page Navigation
+// About Page Navigation the change
 const menuBtn = document.getElementById('burger-container');
 const navOverlay = document.getElementById('nav');
 const navList = document.getElementsByClassName('menu')[0];

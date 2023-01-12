@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
-
-
+<!-- the change -->
 <div align="center">
   <img src="camp-logowithout.png" alt="logo" width="140"  height="auto" />
   <img src="./media/my-logo.png" alt="logo" width="140"  height="auto" />
