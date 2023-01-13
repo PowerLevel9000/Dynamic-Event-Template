@@ -1,23 +1,4 @@
-//  More Or Less Button
-const trainer = document.querySelectorAll('.trainer-card');
-const button = document.querySelector('.trainer-btn');
-const less = document.getElementById('morles');
-const up = document.getElementById('chevron');
-function display() {
-  for (let i = 2; i < trainer.length; i += 1) {
-    trainer[i].classList.toggle('invisible');
-  }
-  if (less.innerText === 'MORE ' && up.classList.value === 'fas fa-chevron-down') {
-    less.innerText = 'LESS ';
-    up.classList.value = 'fas fa-chevron-up';
-  } else if (less.innerText === 'LESS ' && up.classList.value === 'fas fa-chevron-up') {
-    less.innerText = 'MORE ';
-    up.classList.value = 'fas fa-chevron-down';
-  }
-}
-
-// Navigation Overlay
-button.addEventListener('click', display);
+//  Navigation mobile burger overlay
 const menuBtn = document.getElementById('burger-container');
 const navOverlay = document.getElementById('nav');
 const navList = document.getElementsByClassName('menu')[0];
@@ -30,3 +11,35 @@ function overlay() {
 
 menuBtn.addEventListener('click', overlay);
 navList.addEventListener('click', overlay);
+
+// logo Dynamics
+const ourLogo = 'camp-logowithout.png';
+const ourLogos = document.querySelectorAll('.ourLogo');
+ourLogos.forEach((element) => {
+  element.setAttribute('src', ourLogo);
+});
+
+// Partner logo dynamics
+const partnersLogo = [
+  ['./brands/icc-withoutbk.png', 'https://www.icc-cricket.com/homepage'],
+  ['./brands/isl.webp', 'https://www.indiansuperleague.com/'],
+  ['./brands/world-taekwondobk.png', 'http://www.worldtaekwondo.org/index.html'],
+  ['./brands/Sai-removebg-preview.png', 'https://sportsauthorityofindia.nic.in/sai/'],
+  ['./brands/wrestling-logo-withoutbackground.jpg', 'http://wrestlingfederationofindia.org/'],
+];
+
+const partnerList = document.getElementById('partnerList');
+partnerList.innerHTML = '';
+partnersLogo.forEach((e) => {
+  partnerList.innerHTML += `
+    <li>
+        <a href="${e[1]}" target="_blank" rel="noopener noreferrer">
+          <img title="Partner's Logo And Link" src="${e[0]}" alt="partner-logo" class="partner-logo">
+        </a>
+    </li>
+  `;
+});
+
+const partnersLogoList = document.querySelectorAll('.partner-logo');
+partnersLogoList[1].classList.add('sec');
+partnersLogoList[3].classList.add('sec2');
