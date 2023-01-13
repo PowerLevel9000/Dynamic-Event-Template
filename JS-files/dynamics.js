@@ -1,4 +1,107 @@
-// Data Base //the change
+// Data Base
+const websiteDatabase = {
+  introduction: {
+    preTitle1: 'Gear up India!',
+    preTitle2: 'Namaste India!',
+    mainTitle: 'SAI<br>Organizing<br>Summer Camp 2023',
+    description1: `After a long time we are finally back. Tell all
+    your friends and come join us at our summer-camp event, where we will
+    be running a bundle of fun, productive and interesting activities.
+    Sports Authority of India is back With Summer Camp!`,
+    date: '2023.3.15(Wed) ~ 2023.4.16(Sun)',
+    credit: '@ C.C. Sports Authority Of India',
+  },
+  programCard: [
+    {
+      logo: `
+      <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+        sports_cricket
+      </span>
+    `,
+      title: 'Cricket',
+      description: `Cricket is a bat-and-ball game played between two teams of eleven players
+      on a field at the centre of which is a 22-yard (20-metre)`,
+    },
+    {
+      logo: `
+      <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+        sports_martial_arts
+      </span>
+    `,
+      title: 'Martial Arts',
+      description: `Martial arts are codified systems and traditions of combat practiced for a
+        number of reasons such as self-defense`,
+    },
+    {
+      logo: `
+      <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+        sports_mma
+      </span>
+    `,
+      title: 'Boxing',
+      description: `Boxing is a combat sport that involves fighting with fists. Traditionally,
+        boxing has also been referred to as “pugilism,”`,
+    },
+    {
+      logo: `
+      <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+        sports_soccer
+      </span>
+    `,
+      title: 'Football',
+      description: `Football is a team sport in which two teams play against each other to score
+        their spherical ball in the other opponents net`,
+    },
+    {
+      logo: `
+      <i title="Program Logo" class="fa-solid fa-dumbbell symbols notranslate"></i>
+    `,
+      title: 'Weight lifting',
+      description: `Weight lifting generally refers to activities in which people lift weights,
+        often in the form of dumbbells or barbells`,
+    },
+    // logo: [
+
+    //   `
+    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+    //       sports_martial_arts
+    //     </span>
+    //   `,
+    //   `
+    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+    //       sports_mma
+    //     </span>
+    //   `,
+    //   `
+    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
+    //       sports_soccer
+    //     </span>
+    //   `,
+    //   `
+    //     <i title="Program Logo" class="fa-solid fa-dumbbell symbols notranslate"></i>
+    //   `,
+    // ],
+    // title: [
+
+    //   'Martial Arts',
+    //   'Boxing',
+    //   'Football',
+    //   'Weight lifting',
+    // ],
+    // description: [
+
+    //   `Martial arts are codified systems and traditions of combat practiced for a
+    //   number of reasons such as self-defense`,
+    //   `Boxing is a combat sport that involves fighting with fists. Traditionally,
+    //   boxing has also been referred to as “pugilism,”`,
+    //   `Football is a team sport in which two teams play against each other to score
+    //   their spherical ball in the other opponents net`,
+    //   `Weight lifting generally refers to activities in which people lift weights,
+    //    often in the form of dumbbells or barbells`,
+    // ],
+  ],
+};
+
 const trainersDatabase = [
   {
     name: 'M. S. Dhoni',
@@ -57,6 +160,44 @@ const trainersDatabase = [
     image: './trainers/volunteers.jpg',
   },
 ];
+// Program Introduction Dynamics
+
+const introductionSection = document.getElementById('introductionSection');
+introductionSection.innerHTML = `
+  <h2 title="Warm Up">${websiteDatabase.introduction.preTitle1}</h2>
+    <h1 title="Our Program">${websiteDatabase.introduction.mainTitle}</h1>
+    <div class="deco-ball-1"></div>
+    <div class="txt-container">
+      <p title="Program Intro">
+        ${websiteDatabase.introduction.description1}
+      </p>
+    </div>
+    <div class="tag-container">
+      <h3 title="Program Date">${websiteDatabase.introduction.date}</h3>
+      <p title="Credit">
+        ${websiteDatabase.introduction.credit}
+      </p>
+      <img src="./media/hitmark-gray.png" alt="deck" class="tag-hitmark">
+      <i class="fas fa-globe-americas"></i>
+    </div>
+`;
+// dynamic program cards
+const programContainer = document.getElementById('programContainer');
+websiteDatabase.programCard.forEach((element) => {
+  programContainer.innerHTML += `
+        <article class="main-card">
+        <div class="program-logo">
+          ${element.logo}
+        </div>
+        <h3 title="Program Title" class="m-card-title">${element.title}</h3>
+        <div class="para-containor">
+          <p title="Program Description" class="m-card-text">
+            ${element.description}
+          </p>
+        </div>
+      </article>
+  `;
+});
 
 //  Dynamic inserting of trainer section
 const trainers = document.querySelector('#trainer-container');
@@ -84,3 +225,22 @@ for (let i = 0; i < trainersDatabase.length; i += 1) {
     `;
   trainers.appendChild(trainerCard);
 }
+
+// more or less button work
+const trainer = document.querySelectorAll('.trainer-card');
+const button = document.querySelector('.trainer-btn');
+const less = document.getElementById('morles');
+const up = document.getElementById('chevron');
+function display() {
+  for (let i = 2; i < trainer.length; i += 1) {
+    trainer[i].classList.toggle('invisible');
+  }
+  if (less.innerText === 'MORE ' && up.classList.value === 'fas fa-chevron-down') {
+    less.innerText = 'LESS ';
+    up.classList.value = 'fas fa-chevron-up';
+  } else if (less.innerText === 'LESS ' && up.classList.value === 'fas fa-chevron-up') {
+    less.innerText = 'MORE ';
+    up.classList.value = 'fas fa-chevron-down';
+  }
+}
+button.addEventListener('click', display);
