@@ -176,10 +176,6 @@ You can deploy this project using:
 - Twitter: [@PowerLevel9002](https://twitter.com/PowerLevel9002?t=AIuSN7mTxk5a_MWpLolEjA&s=09)
 - LinkedIn: [@Adarsh Pathak](https://www.linkedin.com/in/adarsh-pathak-56a831256/)
 
-<!-- 👤 **Rubén D. Pire**
-
-- GitHub: [@rpire](https://github.com/rpire) -->
-
 
 <!-- FUTURE FEATURES -->
 
