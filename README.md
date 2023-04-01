@@ -54,6 +54,7 @@
 > This Project is about the event going to be held in the march THE Summer Camp organized by SIA
 
 **Summer Camp Event Page** is just a introduction about the upcoming event 
+this template is made for organizing various events . it is fully dynamic if you want to organise another event you just need to give data and instruction 
 
 ## 🛠 Built With <a name="built-with"></a>
 

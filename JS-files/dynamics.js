@@ -60,45 +60,6 @@ const websiteDatabase = {
       description: `Weight lifting generally refers to activities in which people lift weights,
         often in the form of dumbbells or barbells`,
     },
-    // logo: [
-
-    //   `
-    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
-    //       sports_martial_arts
-    //     </span>
-    //   `,
-    //   `
-    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
-    //       sports_mma
-    //     </span>
-    //   `,
-    //   `
-    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
-    //       sports_soccer
-    //     </span>
-    //   `,
-    //   `
-    //     <i title="Program Logo" class="fa-solid fa-dumbbell symbols notranslate"></i>
-    //   `,
-    // ],
-    // title: [
-
-    //   'Martial Arts',
-    //   'Boxing',
-    //   'Football',
-    //   'Weight lifting',
-    // ],
-    // description: [
-
-    //   `Martial arts are codified systems and traditions of combat practiced for a
-    //   number of reasons such as self-defense`,
-    //   `Boxing is a combat sport that involves fighting with fists. Traditionally,
-    //   boxing has also been referred to as “pugilism,”`,
-    //   `Football is a team sport in which two teams play against each other to score
-    //   their spherical ball in the other opponents net`,
-    //   `Weight lifting generally refers to activities in which people lift weights,
-    //    often in the form of dumbbells or barbells`,
-    // ],
   ],
 };
 
@@ -185,7 +146,7 @@ introductionSection.innerHTML = `
 const programContainer = document.getElementById('programContainer');
 websiteDatabase.programCard.forEach((element) => {
   programContainer.innerHTML += `
-        <article class="main-card">
+        <article class="main-card" data-aos="flip-left">
         <div class="program-logo">
           ${element.logo}
         </div>
@@ -211,11 +172,11 @@ for (let i = 0; i < trainersDatabase.length; i += 1) {
   }
 
   trainerCard.innerHTML = `
-        <div class= "trainer-frame">
+        <div class= "trainer-frame" data-aos="flip-left">
           <img src="./media/11-chess-board-gray.png" alt="" class="trainer-deco">
           <img title="Our Trainer" src="${trainersDatabase[i].image}" alt="Our Trainers" class="trainer-img">
         </div>
-        <div class="trainer-info">
+        <div class="trainer-info" data-aos="flip-right">
           <h3 title="Trainer Name" class="trainer-name">${trainersDatabase[i].name}</h3>
           <h4 title="Trainer Field" class="trainer-occ">${trainersDatabase[i].field}</h4>
           <hr>
