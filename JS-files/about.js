@@ -18,12 +18,12 @@ const aboutDatabase = {
 
 const aboutIntroduction =document.getElementById('aboutIntroduction');
 aboutIntroduction.innerHTML += `
-  <div class="namaste">
+  <div class="namaste" data-aos="fade-up">
       <h2 title="Greeting">Namaste India!</h2>
       <h1 title="Our Program">SAI Organizing The<br>Summer-Camp 2023</h1>
     </div>
 
-    <div class="txt-container">
+    <div class="txt-container" data-aos="fade-up">
       <p title="Website Description">
         This is website build for the SIA Summer Camp event at Jawaharlal Nehru Stadium (Delhi).
         Jawaharlal Nehru Stadium is a multi-sports stadium located in New Delhi, India.
@@ -34,7 +34,7 @@ aboutIntroduction.innerHTML += `
         gear up! gear up! gear up...!
       </p>
     </div>
-    <p title="Doubt ??" class="contact">
+    <p title="Doubt ??" class="contact" data-aos="fade-up">
       If you have further questions about the re-opening event please reach
       out to our volunteer<br><a title="Mail our Manager" href="mailto:adi8090808766@gmail.com">Adarsh</a>
     </p>

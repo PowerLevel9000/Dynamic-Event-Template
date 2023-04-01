@@ -146,7 +146,7 @@ introductionSection.innerHTML = `
 const programContainer = document.getElementById('programContainer');
 websiteDatabase.programCard.forEach((element) => {
   programContainer.innerHTML += `
-        <article class="main-card">
+        <article class="main-card" data-aos="flip-left">
         <div class="program-logo">
           ${element.logo}
         </div>
@@ -172,11 +172,11 @@ for (let i = 0; i < trainersDatabase.length; i += 1) {
   }
 
   trainerCard.innerHTML = `
-        <div class= "trainer-frame">
+        <div class= "trainer-frame" data-aos="flip-left">
           <img src="./media/11-chess-board-gray.png" alt="" class="trainer-deco">
           <img title="Our Trainer" src="${trainersDatabase[i].image}" alt="Our Trainers" class="trainer-img">
         </div>
-        <div class="trainer-info">
+        <div class="trainer-info" data-aos="flip-right">
           <h3 title="Trainer Name" class="trainer-name">${trainersDatabase[i].name}</h3>
           <h4 title="Trainer Field" class="trainer-occ">${trainersDatabase[i].field}</h4>
           <hr>
