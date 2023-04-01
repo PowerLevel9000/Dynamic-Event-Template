@@ -60,45 +60,6 @@ const websiteDatabase = {
       description: `Weight lifting generally refers to activities in which people lift weights,
         often in the form of dumbbells or barbells`,
     },
-    // logo: [
-
-    //   `
-    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
-    //       sports_martial_arts
-    //     </span>
-    //   `,
-    //   `
-    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
-    //       sports_mma
-    //     </span>
-    //   `,
-    //   `
-    //     <span title="Program Logo" class="material-symbols-outlined symbols notranslate">
-    //       sports_soccer
-    //     </span>
-    //   `,
-    //   `
-    //     <i title="Program Logo" class="fa-solid fa-dumbbell symbols notranslate"></i>
-    //   `,
-    // ],
-    // title: [
-
-    //   'Martial Arts',
-    //   'Boxing',
-    //   'Football',
-    //   'Weight lifting',
-    // ],
-    // description: [
-
-    //   `Martial arts are codified systems and traditions of combat practiced for a
-    //   number of reasons such as self-defense`,
-    //   `Boxing is a combat sport that involves fighting with fists. Traditionally,
-    //   boxing has also been referred to as “pugilism,”`,
-    //   `Football is a team sport in which two teams play against each other to score
-    //   their spherical ball in the other opponents net`,
-    //   `Weight lifting generally refers to activities in which people lift weights,
-    //    often in the form of dumbbells or barbells`,
-    // ],
   ],
 };
 
