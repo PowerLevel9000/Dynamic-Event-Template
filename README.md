@@ -7,27 +7,16 @@
   <h1><b>Summer Camp Event Page</b><br><br></h1>
   
 </div>
-<h2>Main Page <b>Desktop View<b><br><br></h2>
-<div align="center">
-  <img src="./media/desktop-page.png" alt="logo" width="100%"  height="auto" />
-</div>
-<h2>About Page <b>Desktop View<b><br><br></h2>
-<div align="center">
-  <img src="./media/about-desktop-page.png" alt="logo" width="100%"  height="auto" />
-</div>
 
-<div>
-  <h2>About Page <b>Mobile View<b><br><br></h2>
-  <img src="./media/mobile-page.png" alt="logo"  />
-  <h2>About Page <b>Mobile View<b><br><br></h2>
-  <img src="./media/about-mobile-page.png" alt="logo"  />
+<div align="center">
+  <img src="./event/all-devices-black.png" width ='100%'>
 </div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [🧪 Linters And Deployment](#linters)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -51,16 +40,19 @@
 
 # 📖 Summer Camp Event Page <a name="about-project"></a>
 
-> This Project is about the event going to be held in the march THE Summer Camp organized by SIA
+This Project is about the event going to be held in the march THE Summer Camp organized by SIA
 
 **Summer Camp Event Page** is just a introduction about the upcoming event 
-this template is made for organizing various events . it is fully dynamic if you want to organise another event you just need to give data and instruction 
+this template is made for organizing various events . it is fully dynamic if you want to organize another event you just need to give data and instruction 
+
+## 🧪 Linters And Deployment <a name="linters"></a>
+
+[![Linters](https://github.com/PowerLevel9000/Dynamic-Event-Template/actions/workflows/linters.yml/badge.svg)](https://github.com/PowerLevel9000/Dynamic-Event-Template/actions/workflows/linters.yml)
+[![pages-build-deployment](https://github.com/PowerLevel9000/Dynamic-Event-Template/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/PowerLevel9000/Dynamic-Event-Template/actions/workflows/pages/pages-build-deployment)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> In this project I used many skills, tech and libraries
 
 <details>
   <summary>Documentation</summary>
@@ -94,12 +86,12 @@ this template is made for organizing various events . it is fully dynamic if you
 
 ### Key Features <a name="key-features"></a>
 
-> Following features you should observe
+ Following features you should observe
 
 - **Animation on scroll**
 - **Navigation list hover**
 - **Pre Navigation bar is about me**
-- **Pre Navigation bar have Google Translator for our wbsite**
+- **Pre Navigation bar have Google Translator for our website**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +99,7 @@ this template is made for organizing various events . it is fully dynamic if you
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> This link will guide you to my project
+ This link will guide you to my project 💕💕😁 don't forget to take a look at my presentation video 😜😜
 
 - [Live Demo Link](https://powerlevel9000.github.io/Dynamic-Event-Template/)
 - [Loom Video](https://www.loom.com/share/263ca564cb634bcca4b48ad1ea9870b7)
@@ -118,9 +110,7 @@ this template is made for organizing various events . it is fully dynamic if you
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
->For having local file and project you can fork this repo 
-
->And for making changes you you should follow prerequisites
+For getting started yu can fork this repo or clone it in desired directory and make sure to follow [Prerequisites](#prerequisites) correctly
 
 
 ### Prerequisites
@@ -129,12 +119,21 @@ In order to edit this project you need:
 
  - Any text editor such as note pad and word pad
  - A web browser
+ - Node js installed
+ - An IDE
 
-#### suggested 
- - visual studio code
- - atom 
- - visual code 
+#### Suggested IDE
+ - Visual studio code `I prefer this one 🙃🙃`
+ - Atom 
+ - Sublime 
+ - IntelliJ IDEA
+ - Visual code 
 
+### Install
+
+```
+npm i 
+```
 ### Setup
 
 Clone this repository to your desired folder:
@@ -152,7 +151,7 @@ Clone this repository to your desired folder:
 
 
 ### Run tests
-
+> For now we don't have automated test but you can test it manually
 - Check whether animation is good
 - check all the link on social icons are working or not 
 - also click on Adarsh in about page to mail me
@@ -162,7 +161,7 @@ Clone this repository to your desired folder:
 
 You can deploy this project using:
 
-- for this repo and use git hub pages to deploy it 
+- for this repo and use GitHub pages to deploy it 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,8 +180,6 @@ You can deploy this project using:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add more Pages**
 - [ ] **Dynamic everything so that it can be switchable for many websites**
@@ -214,7 +211,7 @@ If you like my Project give it a Star ✨🌟
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project design is reflection of Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+This project design is reflection of Original design idea by  ©️[Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,15 +219,12 @@ This project design is reflection of Original design idea by [Cindy Shin in Beha
 
 ## ❓ FAQ <a name="faq"></a>
 
-> ask questions to be here 
+> Ask Intreating questions to be here 
 
-- **[Question_1]**
+- **Question_1** When next event going to be held 
 
-  - [Answer_1]
+  - Answer_1 All event information will be updated on website please check it regularly so tha you won't miss it 😉
 
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,7 +233,5 @@ This project design is reflection of Original design idea by [Cindy Shin in Beha
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
